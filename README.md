@@ -1,2 +1,2 @@
 # docker-php-compose
-Docker Compose Sample
+Docker Compose Sample.
