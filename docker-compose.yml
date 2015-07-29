@@ -1,0 +1,17 @@
+web:
+  build: .
+  ports:
+   - "8083:80"
+  volumes:
+   - ./www:/var/www/site
+  links:
+   - db:mysql
+
+db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456
+    MYSQL_DATABASE: dbdemo 
+    MYSQL_USER: devspark
+    MYSQL_PASSWORD: dev123
+
